@@ -28,7 +28,7 @@ This README outlines the details of collaborating on this Ember addon.
 
 The UI Component can be used in a template like this:
 
-* *Curly brace syntax* (pre Ember 1.13 although this should still work in later versions):  
+* **Curly brace syntax** (pre Ember 1.13 although this should still work in later versions):  
 
 ```javascript
 {{menu-to-tag
@@ -37,7 +37,7 @@ The UI Component can be used in a template like this:
 }}
 ```
 
-* *Angle bracket syntax* (Ember 1.13 or later):  
+* **Angle bracket syntax** (Ember 1.13 or later):  
 
 ```javascript
 <menu-to-tag
