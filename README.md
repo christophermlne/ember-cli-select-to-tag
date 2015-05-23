@@ -24,4 +24,25 @@ This README outlines the details of collaborating on this Ember addon.
 
 * `ember build`
 
+## Usage
+
+The UI Component can be used in a template like this:
+
+Curly brace syntax (pre Ember 1.13 although this should still work in later versions):  
+
+```
+{{popover-button
+  text='Your drop-down label text'
+  menuData=yourDataSource
+}}
+```
+
+Angle bracket syntax (Ember 1.13 or later):  
+```
+<popover-button
+  text='Your drop-down label text'
+  menuData={{yourDataSource}}
+></popover-button>
+```
+
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
