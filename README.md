@@ -28,21 +28,22 @@ This README outlines the details of collaborating on this Ember addon.
 
 The UI Component can be used in a template like this:
 
-Curly brace syntax (pre Ember 1.13 although this should still work in later versions):  
+* *Curly brace syntax* (pre Ember 1.13 although this should still work in later versions):  
 
-```
-{{popover-button
+```javascript
+{{menu-to-tag
   text='Your drop-down label text'
   menuData=yourDataSource
 }}
 ```
 
-Angle bracket syntax (Ember 1.13 or later):  
-```
-<popover-button
+* *Angle bracket syntax* (Ember 1.13 or later):  
+
+```javascript
+<menu-to-tag
   text='Your drop-down label text'
   menuData={{yourDataSource}}
-></popover-button>
+></menu-to-tag>
 ```
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
