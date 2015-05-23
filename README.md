@@ -1,4 +1,6 @@
-# Button-select-to-tag
+Status: This project is an early stage WIP, at version 0.0.0
+
+# Ember-cli-select-to-tag
 
 This README outlines the details of collaborating on this Ember addon.
 
