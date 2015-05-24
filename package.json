@@ -1,5 +1,5 @@
 {
-  "name": "button-select-to-tag",
+  "name": "ember-cli-select-to-tag",
   "version": "0.0.0",
   "description": "Ember user interface component that converts a selected item from a drop-down menu into a tag",
   "directories": {

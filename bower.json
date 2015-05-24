@@ -1,5 +1,5 @@
 {
-  "name": "button-select-to-tag",
+  "name": "ember-cli-select-to-tag",
   "dependencies": {
     "ember": "1.12.0",
     "ember-cli-shims": "ember-cli/ember-cli-shims#0.0.3",

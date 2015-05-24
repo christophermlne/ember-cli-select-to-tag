@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'button-select-to-tag'
+  name: 'ember-cli-select-to-tag'
 };
