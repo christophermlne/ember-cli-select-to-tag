@@ -14,24 +14,22 @@ test('should not not be open for the first time', function(assert) {
   assert.equal(component.get('isOpen'), false);
 });
 
-// TODO this really isn't testing the correct user interaction
-test('should open menu when hovered over', function(assert) {
+test('will open menu when told', function(assert) {
   var component = this.subject();
 
   Ember.run(function() {
-    component.send('openMenu');
+    component.openMenu();
   });
-  assert.equal(component.get('isOpen'), true);
+  assert.equal(component.get('isOpen'), true, 'menu should be open');
 });
 
-// TODO this really isn't testing the correct user interaction
-test('should close menu when hovered over', function(assert) {
+test('will close menu when told', function(assert) {
   var component = this.subject();
 
   Ember.run(function() {
-    component.send('closeMenu');
+    component.closeMenu();
   });
-  assert.equal(component.get('isOpen'), false);
+  assert.equal(component.get('isOpen'), false, 'menu should be closed');
 });
 
 test('should not have a selection for the first time', function(assert) {
@@ -46,15 +44,15 @@ test('should not contain a selected item for this first time', function(assert) 
   assert.equal(component.get('itemSelected'), null);
 });
 
-test('should clear the selected item', function(assert) {
+test('clearing the selection', function(assert) {
   var component = this.subject();
 
   Ember.run(function() {
     component.send('clearSelection');
   });
 
-  assert.equal(component.get('hasSelection'), false);
-  assert.equal(component.get('itemSelected'), null);
+  assert.equal(component.get('hasSelection'), false, 'should set flag to indicate it has no selection');
+  assert.equal(component.get('itemSelected'), null, 'should discard reference to any selected item');
 });
 test('should set the selected item', function(assert) {
   var component = this.subject();
